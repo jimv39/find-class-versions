@@ -1,4 +1,6 @@
 # find-class-versions
+**This utility will only run on Java8 or later.**
+
 Simple java command line utility to report on the version of the .class files within .jar files beneath a given directory.
 
 The utility takes 2 arguments.
