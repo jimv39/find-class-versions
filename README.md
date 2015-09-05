@@ -1,5 +1,5 @@
 # find-class-versions
-**This utility will only run on Java8 or later.**
+**This utility will only run on Java7 or later.**
 
 Simple java command line utility to report on the version of the .class files within .jar files beneath a given directory.
 
@@ -18,3 +18,10 @@ The above will report the java class version of all jar files found beneath the 
 
 Note that a .jar file *may* have more than 1 version of .class files within it. This utility will report all versions found, one per line.
 
+## Motivation
+
+Suppose you're working on a legacy project that is required to target an older JVM. In your development environment, you use the latest
+JVM, but for actual deployment, your target JVM is old. How do you easily identify the problem jar files that get bundled
+into your project, where a problem jar file is any that includes .class files that target a newer JVM than the one to which you will deploy?
+
+This tool makes it easy to identify those problem .jar files.
