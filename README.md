@@ -10,7 +10,7 @@ be reported.
 
 A typical command line might look like:
 
-java -jar find-class-versions-1.0.0.jar /home/username/dev 50
+`java -jar find-class-versions-1.0.0.jar /home/username/dev 50`
 
 The above will report the java class version of all jar files found beneath the /home/username/dev directory.
 
